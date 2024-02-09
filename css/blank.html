@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Bella's Website</title> 
+		<link rel="stylesheet" type="text/css" href="css/style.css">  
+		<script src="https://kit.fontawesome.com/5a5fa7af9c.js" crossorigin="anonymous"></script>
+
+	</head>
+	<body>
+		<head>
+			<style>
+				.sidebar {
+					height: 100%;
+					width: 0;
+					position: fixed;
+					top: 0;
+					left: 0;
+					background-color: #DABFDE;
+					overflow-x: hidden;
+					transition: 0.5s;
+					padding-top: 60px;
+				}
+		
+				.sidebar div {
+					padding: 8px 8px 8px 30px;
+					font-size: 24px;
+					display: block;
+					transition: 0.5s;
+					cursor: pointer;
+				}
+		
+				.sidebar .closebtn {
+					position: absolute;
+					top: 0;
+					right: 25px;
+					font-size: 36px;
+				}
+		
+				.openbtn {
+					font-size: 24px;
+					cursor: pointer;
+					background-color: #DABFDE;
+				}
+		
+				#main {
+					transition: margin-left .5s;
+				}
+			</style>
+		</head>
+		
+		<body>
+		
+			<div id="mySidebar" class="sidebar">
+				<div class="closebtn" onclick="closeNav()">×</div>
+				<nav>
+					<a href="https://www.linkedin.com/in/thu-trang-bella-cu-942136270/">Linkedin</a>
+				</nav>
+			</div>
+		
+			<div id="main">
+				
+			<button class="openbtn" onclick="openNav()"> <i class="fas fa-hourglass"></i> <!-- Hourglass icon -->More Information</button>
+			
+			</div>
+		
+			<script>
+				function openNav() {
+					document.getElementById("mySidebar").style.width = "250px";
+					document.getElementById("main").style.marginLeft = "250px";
+				}
+		
+				function closeNav() {
+					document.getElementById("mySidebar").style.width = "0";
+					document.getElementById("main").style.marginLeft = "0";
+				}
+			</script>
+		</body>
+
+		<header>
+			<h1> Welcome to Bella's website! </h1> 
+		</header>
+		<section>
+			<img src="bella.jpg">
+			<p> Hi! My name is Bella and I'm currently doing a 
+						Bachelor of Commerce & Computer Science at UNSW! 
+							Scroll to find out more about me!</p>   
+		</section>
+
+		<section class="content-box">
+			<div class="box-container">
+					<h2>About Me</h2>
+					<p>Name: Bella Cu</p>
+					<p>Age: 19</p>
+					<p>Horoscope sign: Leo</p>
+					<p>MBTI: ESFP</p>
+			</div>
+	</section>
+		
+		<section class="content-box">
+			<div class="box-container">
+					<h2>My Hobbies</h2>
+					<div class="hobby-item">
+							<h3>Reading</h3>
+							<p>I have always loved reading growing up. Here are some of my favourite books!</p>
+							<ul>
+									<li>Pride and Prejudice by Jane Austen</li>
+									<li>The Kite Runner by Khaled Hosseini</li>
+									<li>Six of Crows by Leigh Bardugo</li>
+							</ul>
+					</div>
+					
+					<div class="hobby-item">
+							<h3>Watching TV shows/Kdramas</h3>
+							<p>Below are my favourite shows and why I love them.</p>
+							<ul>
+									<li>Friends</li>
+									<p>A CLASSIC! It is such a feel-good show and I can rewatch it constantly forever.</p>
+									<li>The Kite Runner by Khaled Hosseini</li>
+									<li>Six of Crows by Leigh Bardugo</li>
+							</ul>
+					</div>
+			</div>
+	</section>
+								
+	</body>
+
+
+
+	timeline
+	2023 - started UNSW
+	2022 - highschool graduation
+	2018 - Taylor Swift concert
+	2017 - moved to australia
+	2013 - Moved school and met my lifelong bestfriend (11 years going strong)
+	2009 - Almost died from choking on rice congee 
+	2004 - Birth
+
+
+	2004
+</html>
